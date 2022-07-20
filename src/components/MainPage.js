@@ -11,6 +11,10 @@ export default function MainPage() {
           <p>Pergunta 1</p>
           <ion-icon name="play-outline"></ion-icon>
         </div>
+        <div class='question title'>
+          <p>Esse seria o título da pergunta a ser lembrada</p>
+          <img src="images/setinha.png"></img>
+        </div>
         <div class='question answered missed'>
           <p>Pergunta 1</p>
           <ion-icon name="close-circle"></ion-icon>

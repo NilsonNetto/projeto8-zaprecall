@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&family=Righteous&display=swap');
-
-* {
-  font-family: 'Recursive', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Recursive:wght@300;400;500;600;700&display=swap');
 
 body {
+  font-family: 'Recursive', sans-serif;
   background-color: #fb6b6b;
 }
 
@@ -55,6 +52,7 @@ header img {
 
 .deck {
   width: 100%;
+  margin-bottom: 130px;
 }
 
 .question {
@@ -81,11 +79,23 @@ header img {
   color: #333333;
 }
 
+.question.title,
 .question.answer {
+  min-height: 12 0px;
   height: auto;
   display: flex;
   flex-direction: column;
   padding: 15px 15px 7px 15px;
+  background-color: #ffffd4;
+  position: relative;
+}
+
+.title img {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  width: 30px;
+  height: 20px;
 }
 
 .answers {
