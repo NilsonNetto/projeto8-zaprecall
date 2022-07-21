@@ -5,7 +5,7 @@ import Answered from "./Answered";
 import QuestionNumber from "./QuestionNumber";
 import QuestionTitle from "./QuestionTitle";
 
-export default function Deck({ number, title, answer, footerIcons, setFooterIcons }) {
+export default function Deck({ key, number, title, answer, footerIcons, setFooterIcons }) {
 
   const [questionState, setQuestionState] = React.useState('questionNumber')
 
@@ -15,10 +15,10 @@ export default function Deck({ number, title, answer, footerIcons, setFooterIcon
     case 'questionTitle':
       return <QuestionTitle title={title} setQuestionState={setQuestionState} />;
     case 'answer':
-      return <Answer answer={answer} footerIcons={footerIcons} setFooterIcons={setFooterIcons} setQuestionState={setQuestionState} />
+      return <Answer answer={answer} footerIcons={footerIcons} setFooterIcons={setFooterIcons} setQuestionState={setQuestionState} />;
     case 'answered':
-      return <Answered footerIcons={footerIcons} />
+      return <Answered index={key} number={number} footerIcons={footerIcons} />;
     default:
-      return ('error')
+      return ('error card load');
   }
 }

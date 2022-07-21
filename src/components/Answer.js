@@ -2,7 +2,7 @@
 export default function Answer({ answer, footerIcons, setFooterIcons, setQuestionState }) {
 
   function addFooterIcon(value) {
-    setQuestionState('answered')
+    setQuestionState('answered');
     if (value === "missed") {
       setFooterIcons([...footerIcons, <ion-icon name="close-circle"></ion-icon>])
     } else if (value === "almostMissed") {

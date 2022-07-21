@@ -1,6 +1,7 @@
 import React from "react"
 
 import Card from "./Card";
+import Footer from "./Footer";
 
 
 const deckJSX = [
@@ -13,6 +14,8 @@ const deckJSX = [
   { question: 'Usamos props para __', answer: 'Passar diferentes informações para componentes' },
   { question: 'Usamos estado (state) para __', answer: 'Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente' }
 ]
+
+const deckLength = deckJSX.length;
 
 function shuffleArray(array) {
   array.sort(() => Math.random() - 0.5);
@@ -32,7 +35,7 @@ export default function MainPage() {
   return (
     <main>
       <header>
-        <img onClick={reloadPage} src="images/logo.png"></img>
+        <img onClick={reloadPage} src="images/logo.png" alt="ZapRecall logo"></img>
         <h1 onClick={reloadPage}>ZapRecall</h1>
       </header>
       <div className='deck'>
@@ -43,10 +46,7 @@ export default function MainPage() {
       </div>
 
       <footer>
-        <p>0/4 CONCLUÍDOS</p>
-        <div className='answers-icons'>
-          {footerIcons.map((icon) => { return icon })}
-        </div>
+        <Footer deckLength={deckLength} footerIcons={footerIcons} />
       </footer>
     </main>
   )
