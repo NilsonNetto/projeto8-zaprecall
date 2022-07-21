@@ -1,10 +1,10 @@
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ setPage }) {
   return (
-    <div class="welcome">
+    <div className="welcome">
       <img src="images/logo.png"></img>
       <h1>ZapRecall</h1>
-      <button>Iniciar Recall!!</button>
+      <button onClick={() => setPage('mainPage')}>Iniciar Recall!!</button>
     </div>
   )
 }
