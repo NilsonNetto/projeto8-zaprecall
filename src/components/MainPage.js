@@ -1,5 +1,8 @@
 import React from "react"
 
+import Card from "./Card";
+
+
 const deckJSX = [
   { question: 'O que é JSX?', answer: 'Uma extensão de linguagem do JavaScript' },
   { question: 'O React é __', answer: 'Uma biblioteca JavaScript para construção de interfaces' },
@@ -11,56 +14,32 @@ const deckJSX = [
   { question: 'Usamos estado (state) para __', answer: 'Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente' }
 ]
 
+function shuffleArray(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
+shuffleArray(deckJSX)
+
+function reloadPage() {
+  window.location.reload();
+}
 
 export default function MainPage() {
 
-  const [footerIcons, setFooterIcons] = React.useState([])
 
-  function addFooterIcon(value) {
-    if (value === "missed") {
-      setFooterIcons([...footerIcons, <ion-icon name="close-circle"></ion-icon>])
-    } else if (value === "almostMissed") {
-      setFooterIcons([...footerIcons, <ion-icon name="help-circle"></ion-icon>])
-    } else if (value === "remembered") {
-      setFooterIcons([...footerIcons, <ion-icon name="checkmark-circle"></ion-icon>])
-    }
-  }
+  const [footerIcons, setFooterIcons] = React.useState([])
 
   return (
     <main>
       <header>
-        <img src="images/logo.png"></img>
-        <h1>ZapRecall</h1>
+        <img onClick={reloadPage} src="images/logo.png"></img>
+        <h1 onClick={reloadPage}>ZapRecall</h1>
       </header>
       <div className='deck'>
-        <div className='question'>
-          <p>Pergunta 1</p>
-          <ion-icon name="play-outline"></ion-icon>
-        </div>
-        <div className='question title'>
-          <p>Esse seria o título da pergunta a ser lembrada</p>
-          <img src="images/setinha.png"></img>
-        </div>
-        <div className='question answered missed'>
-          <p>Pergunta 1</p>
-          <ion-icon name="close-circle"></ion-icon>
-        </div>
-        <div className='question answered almost-missed'>
-          <p>Pergunta 1</p>
-          <ion-icon name="help-circle"></ion-icon>
-        </div>
-        <div className='question answered remembered'>
-          <p>Pergunta 1</p>
-          <ion-icon name="checkmark-circle"></ion-icon>
-        </div>
-        <div className='question answer'>
-          <p>Esse deve ser o texto que é a resposta da questão</p>
-          <div className="answers">
-            <div onClick={() => addFooterIcon('missed')}>Não lembrei</div>
-            <div onClick={() => addFooterIcon('almostMissed')}>Quase não lembrei</div>
-            <div onClick={() => addFooterIcon('remembered')}>Zap!</div>
-          </div>
-        </div>
+
+        {deckJSX.map((card, index) => (
+          <Card key={index} number={index + 1} title={card.question} answer={card.answer} footerIcons={footerIcons} setFooterIcons={setFooterIcons} />
+        ))}
       </div>
 
       <footer>

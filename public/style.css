@@ -48,6 +48,11 @@ header {
 header img {
   width: 52px;
   height: 60px;
+  cursor: pointer;
+}
+
+header h1 {
+  cursor: pointer;
 }
 
 .deck {
@@ -81,7 +86,7 @@ header img {
 
 .question.title,
 .question.answer {
-  min-height: 12 0px;
+  min-height: 120px;
   height: auto;
   display: flex;
   flex-direction: column;
