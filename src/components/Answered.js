@@ -1,24 +1,22 @@
 
-export default function Answered({ index, number, footerIcons }) {
-  console.log(footerIcons)
-  console.log(footerIcons[index].props.name)
+export default function Answered({ number, footerIcons, questionIcon }) {
 
-  switch (footerIcons[number - 1].props.name) {
-    case 'close-circle':
+  switch (questionIcon) {
+    case 'missed':
       return (
         <div className='question answered missed'>
           <p>Pergunta {number}</p>
           <ion-icon name="close-circle"></ion-icon>
         </div>
       );
-    case 'help-circle':
+    case 'almostMissed':
       return (
         <div className='question answered almost-missed'>
           <p>Pergunta {number}</p>
           <ion-icon name="help-circle"></ion-icon>
         </div>
       );
-    case 'checkmark-circle':
+    case 'remembered':
       return (
         <div className='question answered remembered'>
           <p>Pergunta {number}</p>
