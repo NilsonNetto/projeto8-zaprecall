@@ -1,0 +1,41 @@
+.question.answer {
+  min-height: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 7px 15px;
+  background-color: #ffffd4;
+  position: relative;
+}
+
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.answers > div {
+  width: 85px;
+  height: 40px;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.answers :first-child {
+  background-color: #ff3030;
+}
+
+.answers :nth-child(2) {
+  background-color: #ff922e;
+}
+
+.answers :last-child {
+  background-color: #2fbe34;
+}

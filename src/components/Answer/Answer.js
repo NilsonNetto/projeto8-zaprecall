@@ -1,4 +1,6 @@
 
+import './Answer.css'
+
 export default function Answer({ answer, footerIcons, setFooterIcons, setQuestionState, setQuestionIcon }) {
 
   function addFooterIcon(value) {

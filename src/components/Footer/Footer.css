@@ -1,0 +1,20 @@
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 70px;
+  height: auto;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.answers-icons ion-icon {
+  font-size: 25px;
+}

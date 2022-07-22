@@ -1,0 +1,18 @@
+.question.title,
+.question.answer {
+  min-height: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 7px 15px;
+  background-color: #ffffd4;
+  position: relative;
+}
+
+.title img {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  width: 30px;
+  height: 20px;
+}

@@ -1,3 +1,4 @@
+import './Answered.css'
 
 export default function Answered({ number, footerIcons, questionIcon }) {
 

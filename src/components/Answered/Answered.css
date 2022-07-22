@@ -1,0 +1,17 @@
+ion-icon[name='close-circle'],
+.missed > p {
+  color: #ff3030;
+  text-decoration: line-through;
+}
+
+ion-icon[name='help-circle'],
+.almost-missed > p {
+  color: #ff922e;
+  text-decoration: line-through;
+}
+
+ion-icon[name='checkmark-circle'],
+.remembered > p {
+  color: #2fbe34;
+  text-decoration: line-through;
+}

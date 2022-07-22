@@ -2,6 +2,8 @@ import React from "react"
 
 import Card from "../Card/Card";
 import Footer from "../Footer/Footer";
+import logo from "../assets/images/logo.png"
+import './MainPage.css'
 
 
 const deckJSX = [
@@ -35,7 +37,7 @@ export default function MainPage() {
   return (
     <main>
       <header>
-        <img onClick={reloadPage} src="./logo.png" alt="ZapRecall logo"></img>
+        <img onClick={reloadPage} src={logo} alt="ZapRecall logo"></img>
         <h1 onClick={reloadPage}>ZapRecall</h1>
       </header>
       <div className='deck'>

@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+header img {
+  width: 52px;
+  height: 60px;
+  cursor: pointer;
+}
+
+header h1 {
+  cursor: pointer;
+}
+
+.deck {
+  width: 100%;
+  margin-bottom: 130px;
+}

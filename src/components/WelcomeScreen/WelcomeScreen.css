@@ -1,0 +1,30 @@
+.welcome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome img {
+  width: 136px;
+  height: 161px;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 36px;
+  color: #ffffff;
+  margin: 30px 0;
+}
+
+.welcome button {
+  width: 246px;
+  height: 55px;
+  background-color: #ffffff;
+  color: #d70900;
+  border-radius: 7px;
+  border: 1px solid #d70900;
+  font-size: 18px;
+  font-weight: 400;
+}
