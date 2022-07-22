@@ -31,11 +31,11 @@ export default function MainPage() {
 
 
   const [footerIcons, setFooterIcons] = React.useState([])
-
+  console.log(footerIcons.length)
   return (
     <main>
       <header>
-        <img onClick={reloadPage} src="images/logo.png" alt="ZapRecall logo"></img>
+        <img onClick={reloadPage} src="./logo.png" alt="ZapRecall logo"></img>
         <h1 onClick={reloadPage}>ZapRecall</h1>
       </header>
       <div className='deck'>

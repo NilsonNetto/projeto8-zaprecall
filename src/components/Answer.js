@@ -5,13 +5,13 @@ export default function Answer({ answer, footerIcons, setFooterIcons, setQuestio
 
     setQuestionState('answered');
     if (value === "missed") {
-      setFooterIcons([...footerIcons, <ion-icon name="close-circle"></ion-icon>])
+      setFooterIcons([...footerIcons, 'close-circle'])
       setQuestionIcon('missed')
     } else if (value === "almostMissed") {
-      setFooterIcons([...footerIcons, <ion-icon name="help-circle"></ion-icon>])
+      setFooterIcons([...footerIcons, 'help-circle'])
       setQuestionIcon('almostMissed')
     } else if (value === "remembered") {
-      setFooterIcons([...footerIcons, <ion-icon name="checkmark-circle"></ion-icon>])
+      setFooterIcons([...footerIcons, 'checkmark-circle'])
       setQuestionIcon('remembered')
     }
   }
