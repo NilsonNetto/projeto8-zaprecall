@@ -10,3 +10,9 @@
   border-radius: 5px;
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
 }
+
+.question ion-icon {
+  font-size: 30px;
+  color: #333333;
+  cursor: pointer;
+}

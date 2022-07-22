@@ -26,6 +26,7 @@
   align-items: center;
   font-size: 12px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .answers :first-child {

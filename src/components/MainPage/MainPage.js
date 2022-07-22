@@ -33,7 +33,7 @@ export default function MainPage() {
 
 
   const [footerIcons, setFooterIcons] = React.useState([])
-  console.log(footerIcons.length)
+
   return (
     <main>
       <header>

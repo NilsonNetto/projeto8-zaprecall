@@ -1,5 +1,4 @@
-.question.title,
-.question.answer {
+.question.title {
   min-height: 120px;
   height: auto;
   display: flex;
@@ -15,4 +14,5 @@
   bottom: 5px;
   width: 30px;
   height: 20px;
+  cursor: pointer;
 }

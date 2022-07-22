@@ -18,3 +18,15 @@ footer {
 .answers-icons ion-icon {
   font-size: 25px;
 }
+
+footer ion-icon[name='close-circle'] {
+  color: #ff3030;
+}
+
+footer ion-icon[name='help-circle'] {
+  color: #ff922e;
+}
+
+footer ion-icon[name='checkmark-circle'] {
+  color: #2fbe34;
+}

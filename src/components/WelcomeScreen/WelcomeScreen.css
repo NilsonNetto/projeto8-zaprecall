@@ -27,4 +27,5 @@ h1 {
   border: 1px solid #d70900;
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
 }

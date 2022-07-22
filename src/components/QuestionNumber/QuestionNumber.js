@@ -1,3 +1,4 @@
+import './QuestionNumber.css'
 
 export default function QuestionNumber({ number, setQuestionState }) {
   return (
