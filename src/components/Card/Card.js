@@ -1,9 +1,9 @@
 
 import React from "react";
-import Answer from "./Answer";
-import Answered from "./Answered";
-import QuestionNumber from "./QuestionNumber";
-import QuestionTitle from "./QuestionTitle";
+import Answer from "../Answer/Answer";
+import Answered from "../Answered/Answered";
+import QuestionNumber from "../QuestionNumber/QuestionNumber";
+import QuestionTitle from "../QuestionTitle/QuestionTitle";
 
 export default function Deck({ key, number, title, answer, footerIcons, setFooterIcons }) {
 

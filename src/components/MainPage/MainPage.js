@@ -1,7 +1,7 @@
 import React from "react"
 
-import Card from "./Card";
-import Footer from "./Footer";
+import Card from "../Card/Card";
+import Footer from "../Footer/Footer";
 
 
 const deckJSX = [
