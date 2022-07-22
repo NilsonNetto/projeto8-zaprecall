@@ -29,3 +29,7 @@ h1 {
   font-weight: 400;
   cursor: pointer;
 }
+
+.welcome button:active {
+  transform: translate(3px, 3px);
+}

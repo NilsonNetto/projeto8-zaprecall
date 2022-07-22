@@ -1,4 +1,6 @@
 import './Footer.css'
+import party from '../assets/images/party.png'
+import sad from '../assets/images/sad.png'
 
 export default function Footer({ deckLength, footerIcons }) {
 
@@ -17,28 +19,25 @@ export default function Footer({ deckLength, footerIcons }) {
     missedIcons = footerIcons.filter(icon => icon === "close-circle")
     if (missedIcons.length > 1) {
       return (
-        <div>
-          <h3> Putz...</h3>
-          <p>Ainda faltam mais alguns...</p>
-          <p>Mas não desanime!</p>
+        <>
+          <h3> <img src={sad} alt='Party emoticon'></img> Putz...</h3>
+          <p>Ainda faltam mais alguns...<br />Mas não desanime! </p>
           <p>{footerIcons.length}/{deckLength} CONCLUÍDOS</p>
           <div className='answers-icons'>
             {iconArray.map(icon => { return icon })}
           </div>
-        </div>
-
+        </>
       )
     } else {
       return (
-        <div>
-          <h3> Parabéns!</h3>
-          <p>Você não esqueceu de </p>
-          <p>nenhum flashcard!</p>
+        <>
+          <h3> <img src={party} alt='Party emoticon'></img> Parabéns!</h3>
+          <p>Você não esqueceu de nenhum flashcard! </p>
           <p>{footerIcons.length}/{deckLength} CONCLUÍDOS</p>
           <div className='answers-icons'>
             {iconArray.map(icon => { return icon })}
           </div>
-        </div>
+        </>
       )
     }
   }
@@ -52,6 +51,7 @@ export default function Footer({ deckLength, footerIcons }) {
         <div className='answers-icons'>
           {iconArray.map(icon => { return icon })}
         </div>
-      </>)
+      </>
+    )
   }
 }
