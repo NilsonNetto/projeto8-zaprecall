@@ -15,8 +15,8 @@ export default function WelcomeScreen({ deck, setDeck, setPage }) {
     <div className="welcome">
       <img src={logo} alt="ZapRecall logo"></img>
       <h1>ZapRecall</h1>
-      <select onChange={(e) => setDeck(e.target.value)}>
-        <option selected disabled>Escolha seu deck</option>
+      <select defaultValue='' onChange={(e) => setDeck(e.target.value)}>
+        <option value='' disabled>Escolha seu deck</option>
         <option value='deckJSX'>React</option>
         <option value='deckPokemon'>Pokemon</option>
       </select>
