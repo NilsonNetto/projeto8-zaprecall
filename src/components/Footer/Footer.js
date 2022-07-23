@@ -4,13 +4,9 @@ import sad from '../assets/images/sad.png'
 
 export default function Footer({ deckLength, footerIcons }) {
 
-  let iconArray = []
-
-  function makeIcon() {
-    iconArray = footerIcons.map((icon) => (<ion-icon name={icon}></ion-icon>))
+  function MakeIcon({ icon }) {
+    return <ion-icon name={icon}></ion-icon>
   }
-
-  makeIcon();
 
   function verifyMissed() {
     let missedIcons = []
@@ -22,7 +18,7 @@ export default function Footer({ deckLength, footerIcons }) {
           <p>Ainda faltam mais alguns...<br />Mas não desanime! </p>
           <p>{footerIcons.length}/{deckLength} CONCLUÍDOS</p>
           <div className='answers-icons'>
-            {iconArray.map(icon => { return icon })}
+            {footerIcons.map((icon, index) => <MakeIcon icon={icon} key={index} />)}
           </div>
         </>
       )
@@ -33,7 +29,7 @@ export default function Footer({ deckLength, footerIcons }) {
           <p>Você não esqueceu de nenhum flashcard! </p>
           <p>{footerIcons.length}/{deckLength} CONCLUÍDOS</p>
           <div className='answers-icons'>
-            {iconArray.map(icon => { return icon })}
+            {footerIcons.map((icon, index) => <MakeIcon icon={icon} key={index} />)}
           </div>
         </>
       )
@@ -47,7 +43,7 @@ export default function Footer({ deckLength, footerIcons }) {
       <>
         <p>{footerIcons.length}/{deckLength} CONCLUÍDOS</p>
         <div className='answers-icons'>
-          {iconArray.map((icon) => { return icon })}
+          {footerIcons.map((icon, index) => <MakeIcon icon={icon} key={index} />)}
         </div>
       </>
     )

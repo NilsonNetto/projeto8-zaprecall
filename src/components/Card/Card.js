@@ -5,7 +5,7 @@ import Answered from "../Answered/Answered";
 import QuestionNumber from "../QuestionNumber/QuestionNumber";
 import QuestionTitle from "../QuestionTitle/QuestionTitle";
 
-export default function Deck({ key, number, title, answer, footerIcons, setFooterIcons }) {
+export default function Card({ number, title, answer, footerIcons, setFooterIcons }) {
 
   const [questionState, setQuestionState] = React.useState('questionNumber')
   const [questionIcon, setQuestionIcon] = React.useState('')
