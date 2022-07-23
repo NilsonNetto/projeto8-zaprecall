@@ -12,6 +12,6 @@ export default function App() {
   if (page === 'welcome') {
     return <WelcomeScreen deck={deck} setDeck={setDeck} setPage={setPage} />
   } else if (page === 'mainPage') {
-    return <MainPage deck={deck} />
+    return <MainPage deck={deck} setDeck={setDeck} setPage={setPage} />
   }
 }

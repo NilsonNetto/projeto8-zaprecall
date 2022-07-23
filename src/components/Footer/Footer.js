@@ -2,10 +2,15 @@ import './Footer.css'
 import party from '../assets/images/party.png'
 import sad from '../assets/images/sad.png'
 
-export default function Footer({ deckLength, footerIcons }) {
+export default function Footer({ setDeck, setPage, deckLength, footerIcons }) {
 
   function MakeIcon({ icon }) {
     return <ion-icon name={icon}></ion-icon>
+  }
+
+  function reloadPage() {
+    setPage('welcome');
+    setDeck('')
   }
 
   function verifyMissed() {
@@ -20,6 +25,7 @@ export default function Footer({ deckLength, footerIcons }) {
           <div className='answers-icons'>
             {footerIcons.map((icon, index) => <MakeIcon icon={icon} key={index} />)}
           </div>
+          <button onClick={reloadPage}>REINICIAR RECALL</button>
         </>
       )
     } else {
@@ -31,6 +37,7 @@ export default function Footer({ deckLength, footerIcons }) {
           <div className='answers-icons'>
             {footerIcons.map((icon, index) => <MakeIcon icon={icon} key={index} />)}
           </div>
+          <button onClick={reloadPage}>REINICIAR RECALL</button>
         </>
       )
     }

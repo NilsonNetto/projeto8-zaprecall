@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 import logo from "../assets/images/logo.png"
 import './MainPage.css'
 
-export default function MainPage({ deck }) {
+export default function MainPage({ deck, setDeck, setPage }) {
 
   const [useDeck, setUseDeck] = React.useState([])
 
@@ -40,7 +40,8 @@ export default function MainPage({ deck }) {
   const deckLength = useDeck.length;
 
   function reloadPage() {
-    window.location.reload();
+    setPage('welcome');
+    setDeck('')
   }
 
   return (
@@ -57,7 +58,7 @@ export default function MainPage({ deck }) {
       </div>
 
       <footer>
-        <Footer deckLength={deckLength} footerIcons={footerIcons} />
+        <Footer setDeck={setDeck} setPage={setPage} deckLength={deckLength} footerIcons={footerIcons} />
       </footer>
     </main>
   )
