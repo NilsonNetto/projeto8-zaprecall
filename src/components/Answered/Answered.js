@@ -1,6 +1,6 @@
 import './Answered.css'
 
-export default function Answered({ number, footerIcons, questionIcon }) {
+export default function Answered({ number, questionIcon }) {
 
   switch (questionIcon) {
     case 'missed':

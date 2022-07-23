@@ -14,8 +14,7 @@ export default function Footer({ setDeck, setPage, deckLength, footerIcons }) {
   }
 
   function verifyMissed() {
-    let missedIcons = []
-    missedIcons = footerIcons.filter(icon => icon === "close-circle")
+    let missedIcons = footerIcons.filter(icon => icon === "close-circle")
     if (missedIcons.length >= 1) {
       return (
         <>

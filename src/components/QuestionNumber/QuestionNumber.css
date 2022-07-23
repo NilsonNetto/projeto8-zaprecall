@@ -16,3 +16,7 @@
   color: #333333;
   cursor: pointer;
 }
+
+.question ion-icon:active {
+  transform: translate(3px, 3px);
+}

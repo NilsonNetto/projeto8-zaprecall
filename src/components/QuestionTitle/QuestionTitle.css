@@ -16,3 +16,7 @@
   height: 20px;
   cursor: pointer;
 }
+
+.title img:active {
+  transform: translate(3px, 3px);
+}

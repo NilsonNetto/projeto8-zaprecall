@@ -29,6 +29,10 @@
   cursor: pointer;
 }
 
+.answers > div:active {
+  transform: translate(3px, 3px);
+}
+
 .answers :first-child {
   background-color: #ff3030;
 }
