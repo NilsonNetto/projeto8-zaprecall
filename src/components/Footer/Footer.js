@@ -12,12 +12,10 @@ export default function Footer({ deckLength, footerIcons }) {
 
   makeIcon();
 
-  console.log(iconArray)
-
   function verifyMissed() {
     let missedIcons = []
     missedIcons = footerIcons.filter(icon => icon === "close-circle")
-    if (missedIcons.length > 1) {
+    if (missedIcons.length >= 1) {
       return (
         <>
           <h3> <img src={sad} alt='Party emoticon'></img> Putz...</h3>
@@ -49,7 +47,7 @@ export default function Footer({ deckLength, footerIcons }) {
       <>
         <p>{footerIcons.length}/{deckLength} CONCLUÍDOS</p>
         <div className='answers-icons'>
-          {iconArray.map(icon => { return icon })}
+          {iconArray.map((icon) => { return icon })}
         </div>
       </>
     )

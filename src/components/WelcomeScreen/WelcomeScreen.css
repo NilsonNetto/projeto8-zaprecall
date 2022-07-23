@@ -18,7 +18,8 @@ h1 {
   margin: 30px 0;
 }
 
-.welcome button {
+.welcome button,
+select {
   width: 246px;
   height: 55px;
   background-color: #ffffff;
@@ -28,8 +29,13 @@ h1 {
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .welcome button:active {
   transform: translate(3px, 3px);
+}
+
+select .disabled {
+  color: lightgray;
 }
