@@ -1,6 +1,6 @@
 import './Footer.css'
-import party from '../assets/images/party.png'
-import sad from '../assets/images/sad.png'
+import party from '../../assets/images/party.png'
+import sad from '../../assets/images/sad.png'
 
 export default function Footer({ setDeck, setPage, deckLength, footerIcons }) {
 

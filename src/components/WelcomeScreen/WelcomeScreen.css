@@ -30,6 +30,7 @@ select {
   font-weight: 400;
   cursor: pointer;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 .welcome button:active {
@@ -38,4 +39,11 @@ select {
 
 select .disabled {
   color: lightgray;
+}
+
+@media (min-width: 600px) {
+  .welcome button,
+  select {
+    width: 400px;
+  }
 }

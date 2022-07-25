@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo.png"
+import logo from "../../assets/images/logo.png"
 import './WelcomeScreen.css'
 
 export default function WelcomeScreen({ deck, setDeck, setPage }) {
@@ -19,6 +19,7 @@ export default function WelcomeScreen({ deck, setDeck, setPage }) {
         <option value='' disabled>Escolha seu deck</option>
         <option value='deckJSX'>React</option>
         <option value='deckPokemon'>Pokemon</option>
+        <option value='deckNaruto'>Naruto</option>
       </select>
       <button onClick={verifyStart}>Iniciar Recall!!</button>
     </div>

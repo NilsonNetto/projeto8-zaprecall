@@ -1,4 +1,4 @@
-import turnArrow from '../assets/images/setinha.png'
+import turnArrow from '../../assets/images/setinha.png'
 import './QuestionTitle.css'
 
 export default function QuestionTitle({ title, setQuestionState }) {

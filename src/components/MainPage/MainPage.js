@@ -2,7 +2,7 @@ import React from "react"
 
 import Card from "../Card/Card";
 import Footer from "../Footer/Footer";
-import logo from "../assets/images/logo.png"
+import logo from "../../assets/images/logo.png"
 import './MainPage.css'
 
 export default function MainPage({ deck, setDeck, setPage }) {
@@ -20,7 +20,7 @@ export default function MainPage({ deck, setDeck, setPage }) {
         { question: 'Usamos o npm para __', answer: 'Gerenciar os pacotes necessários e suas dependências' },
         { question: 'Usamos props para __', answer: 'Passar diferentes informações para componentes' },
         { question: 'Usamos estado (state) para __', answer: 'Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente' }
-      ])
+      ].sort(() => Math.random() - 0.5))
     } else if (deck === 'deckPokemon') {
       setUseDeck([
         { question: 'Quais são so 3 iniciais de Kanto?', answer: 'Bulbasauro, Charmander e Squirtle' },
@@ -31,9 +31,19 @@ export default function MainPage({ deck, setDeck, setPage }) {
         { question: 'Quem é o personagem mais mulherengo?', answer: 'Brock' },
         { question: 'Misty é uma treinadora de Pokemons do tipo ___', answer: 'Aquático' },
         { question: 'Gyarados é um Pokemon dos tipos __ e __', answer: 'Aquático e Voador' }
-      ])
+      ].sort(() => Math.random() - 0.5))
+    } else if (deck === 'deckNaruto') {
+      setUseDeck([
+        { question: 'Naruto e Sasuke lutam em um local chamado __', answer: 'Vale do Fim' },
+        { question: 'Qual dupla lutou e derrotou Sasori?', answer: 'Sakura e Chiyo' },
+        { question: 'Qual o nome do sapo invocado pelo Jiraiya?', answer: 'Gamabunta' },
+        { question: 'Quem são os três ninjas lendários de Konoha?', answer: 'Jiraiya, Tsunade e Orochimaru' },
+        { question: 'Naruto, Sasuke e Sakura fazem parte do Time __', answer: 'Time 7' },
+        { question: 'Quem é o Sexto Hokage?', answer: 'Kakashi' },
+        { question: 'Quem foi o fundador da Vila do Som?', answer: 'Orochimaru' },
+        { question: 'Qual é o nome do Kage da Vila da Areia?', answer: 'Kazekage' }
+      ].sort(() => Math.random() - 0.5))
     }
-    useDeck.sort(() => Math.random() - 0.5);
   }
 
   const [footerIcons, setFooterIcons] = React.useState([])
