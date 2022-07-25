@@ -6,6 +6,8 @@
   padding: 15px 15px 7px 15px;
   background-color: #ffffd4;
   position: relative;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .answers {
@@ -16,7 +18,7 @@
 }
 
 .answers > div {
-  width: 85px;
+  width: 30%;
   height: 40px;
   border-radius: 5px;
   color: #ffffff;
@@ -43,4 +45,10 @@
 
 .answers :last-child {
   background-color: #2fbe34;
+}
+
+@media (min-width: 600px) {
+  .answers > div {
+    font-size: 16px;
+  }
 }

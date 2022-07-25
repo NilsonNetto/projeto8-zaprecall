@@ -5,19 +5,6 @@ body {
   background-color: #fb6b6b;
 }
 
-.question {
-  width: 300px;
-  height: 65px;
-  margin: 25px auto;
-  padding: 0 15px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15);
-}
-
 .question p {
   font-size: 16px;
   font-weight: 700;

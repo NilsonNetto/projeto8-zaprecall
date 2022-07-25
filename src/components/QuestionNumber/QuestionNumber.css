@@ -1,5 +1,5 @@
 .question {
-  width: 300px;
+  width: 80%;
   height: 65px;
   margin: 25px auto;
   padding: 0 15px;
@@ -19,4 +19,14 @@
 
 .question ion-icon:active {
   transform: translate(3px, 3px);
+}
+
+@media (min-width: 600px) {
+  .question {
+    width: 486px;
+  }
+
+  .question p {
+    font-size: 20px;
+  }
 }

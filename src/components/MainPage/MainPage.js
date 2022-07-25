@@ -61,7 +61,6 @@ export default function MainPage({ deck, setDeck, setPage }) {
         <h1 onClick={reloadPage}>ZapRecall</h1>
       </header>
       <div className='deck'>
-
         {useDeck.map((card, index) => (
           <Card key={index} number={index + 1} title={card.question} answer={card.answer} footerIcons={footerIcons} setFooterIcons={setFooterIcons} />
         ))}
